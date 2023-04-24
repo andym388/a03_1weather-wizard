@@ -1,13 +1,13 @@
+// Use the Weather component to fetch and display weather data
 import React from "react";
-import "./App.scss";
 import Weather from "./components/weather/Weather";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Weather />
     </div>
   );
-}
+};
 
 export default App;

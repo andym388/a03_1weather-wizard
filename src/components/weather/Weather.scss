@@ -1,40 +1,34 @@
-.weather-sec {
-    background: rgb(223, 166, 10);
+.weather-section {
+    background: rgb(8, 3, 46);
+    min-height: 100vh;
 }
 
 .weather {
     width: 100%;
-    max-width: 350px;
-    height: 80vh;
-    background: url(../../assets/cold-bg.jpg);
+    max-width: 400px;
+    height: 64vh;
+    background-image: url(../../assets/cold-bg.jpg);
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 3px;
     overflow: hidden;
     position: relative;
 }
 
-.weather::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-    z-index: 0;
+.weather.warm {
+    background-image: url(../../assets/warm-bg.jpg);
 }
 
-.weather-wizard {
-    z-index: 999;
+.weather-fieldset {
+    padding: 5px;
 }
 
-.weather-wizard > *,
+.weather-fieldset > *,
 .result > * {
-    color: #fff;
+    color: white;
 }
 
 .result {
-    background:rgba(12, 144, 239, 0.4);
+    background:rgba(6, 6, 117, 0.4);
 }
 
 .error {
