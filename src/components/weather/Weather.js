@@ -63,7 +63,7 @@ const Weather = () => {
       <div
         className={
           weather.main !== undefined
-            ? weather.main.temp > 15
+            ? weather.main.temp > 17
               ? "container --flex-center weather warm"
               : "container --flex-center weather"
             : "container --flex-center weather"
@@ -114,15 +114,11 @@ const Weather = () => {
               <p className="--fw-bold">
                 Visibility: {weather.visibility} meters
               </p>
+              <p className="--fw-bold">Humidity: {weather.main.humidity}%</p>
               <p className="--fw-bold">
-                Humidity: {weather.main.humidity} g.m-3
+                Wind: {Math.round(weather.wind.speed)} m/s
               </p>
-              <p className="--fw-bold">
-                Wind: {Math.round(weather.wind.speed)} km/h
-              </p>
-              <p className="--fw-bold">
-                Pressure: {weather.main.pressure} N·m−2
-              </p>
+              <p className="--fw-bold">Pressure: {weather.main.pressure} hPa</p>
               <br />
             </div>
           )}
